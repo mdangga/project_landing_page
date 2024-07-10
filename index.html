@@ -3,68 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>futureSkills</title>
+    <title>MindSolver</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
-    <nav>
-        <div class="nav-title">
-            <i class="fas fa-book"></i>
-        </div>
-        <div class="nav-link">
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Benefit">Benefit</a></li>
-                <li><a href="#Pricing">Pricing</a></li>
-            </ul>    
-        </div>
-    </nav>
-    <div class="container">
-        <div id="Home">
-            <h3>Selamat Datang di futureSkills</h3>
-            <h4>tempat kursus belajar web yang terjamin dan terpercaya</h4>
-        </div>
-        <div id="Benefit">
-            <div class="benefit-course">
-                <h3>modul</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum maiores nulla minima, incidunt veniam tempora animi, omnis eaque consequatur illo pariatur hic quibusdam nobis.</p>
+    <div id="container">
+        <header id="header">
+            <div id="logo">
+                <img src="https://freesvg.org/img/1397119481.png" alt="MindSolver" id="header-img">    
+                <h3>MindSolver</h3>
             </div>
-            <div class="benefit-course">
-                <h3>video</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum maiores nulla minima, incidunt veniam tempora animi, omnis eaque consequatur illo pariatur hic quibusdam nobis.</p>
-            </div>
-            <div class="benefit-course">
-                <h3>project</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum maiores nulla minima, incidunt veniam tempora animi, omnis eaque consequatur illo pariatur hic quibusdam nobis.</p>
-            </div>
-        </div>
-        <div id="Pricing">
-            <div class="option-price">
-                <h3>Silver</h3>
-                <h4>$1.00</h4>
+            
+            <nav id="nav-bar">
                 <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
+                    <li><a class="nav-link" href="#Home">Home</a></li>
+                    <li><a class="nav-link" href="#Benefit">Benefit</a></li>
+                    <li><a class="nav-link" href="#Price">Price</a></li>
                 </ul>
-            </div>
-            <div class="option-price">
-                <h3>Gold</h3>
-                <h4>$5.00</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-            </div>
-            <div class="option-price">
-                <h3>Diamond</h3>
-                <h4>$10.00</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-            </div>
+            </nav>
+        </header>
+
+        <div class="main-page">
+            <section id="form-page">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="submit" value="Get Started" id="submit">
+                </form>
+            </section>
+
+            <section id="Home">
+                <h1>Welcome to MindSolver</h1>
+                <h2>ultimate tool for mastering problem-solving skills. Whether you're a student, professional, or lifelong learner, MindSolver is designed to help you tackle challenges with confidence and improve your critical thinking abilities.</h2>
+            </section>
+
+            <section id="Benefit">
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <div class="desciption">
+                        <h2>Enhanced Problem-Solving Abilities</h2>
+                        <p>Develop and refine your problem-solving skills with our comprehensive and interactive learning modules. SkillSolver provides step-by-step guidance, ensuring you grasp fundamental concepts and advanced techniques.</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-globe"></i></div>
+                    <div class="desciption">
+                        <h2>Real-World Applications</h2>
+                        <p>Our content is designed to mimic real-world scenarios, allowing you to apply your skills in practical situations. This hands-on approach ensures you can tackle problems effectively both in academic and professional settings.</p>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-laptop"></i></div>
+                    <div class="desciption">
+                        <h2>Flexible Learning Options</h2>
+                        <p>Learn at your own pace and convenience. SkillSolver is accessible on multiple devices, allowing you to study anytime, anywhere. Fit your learning around your busy schedule without missing a beat.</p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" height="315" frameborder="0" id="video" allowfullscreen></iframe>
+                </div>
+
+            </section>
+
+            <section id="Price">
+                <div class="product" id="Basic">
+                    <div class="level">Basic</div>
+                    <h2>$9.99/month</h2>
+            
+                    <i class="fas fa-book"></i>Access to basic tutorials
+                    <i class="fas fa-tasks"></i>Limited interactive exercises
+                    <i class="fas fa-users"></i>Community support
+                    <button class="btn">Select</button>
+                </div>
+
+                <div class="product" id="Pro">
+                    <div class="level">Pro</div>
+                    <h2>$19.99/month</h2>
+            
+                    <i class="fas fa-book"></i>Access to all tutorials
+                    <i class="fas fa-tasks"></i>Unlimited interactive exercises
+                    <i class="fas fa-users"></i>Community support with expert guidance
+                    <button class="btn">Select</button>
+                </div>
+
+                <div class="product" id="Premium">
+                    <div class="level">Premium</div>
+                    <h2>$29.99/month</h2>
+            
+                    <i class="fas fa-book-reader"></i>Access to all tutorials and premium content
+                    <i class="fas fa-tasks"></i>Unlimited interactive exercises
+                    <i class="fas fa-users-cog"></i>Community support with expert guidance and exclusive forums
+                    <button class="btn">Select</button>
+                </div>
+            </section>
         </div>
     </div>
 </body>
