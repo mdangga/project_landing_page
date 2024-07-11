@@ -1,1 +1,17 @@
-/* Add styles here */
+:root {
+    --background-color: #ffffff;
+    --secondary-bg-color: #dbdee0;
+    --text-color: #191513;
+    --primary-color: #134b84; 
+    --accent-color: #f7463c;
+    --highlight-color: #fad743;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
