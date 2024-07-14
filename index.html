@@ -19,9 +19,9 @@
             </div>
             
             <nav id="nav-bar">
-                    <span><a class="nav-link" href="#Home">Home</a></span>
-                    <span><a class="nav-link" href="#Benefit">Benefit</a></span>
-                    <span><a class="nav-link" href="#Price">Price</a></span>
+                    <span class="header-span"><a class="nav-link" href="#Home">Home</a></span>
+                    <span class="header-span"><a class="nav-link" href="#Benefit">Benefit</a></span>
+                    <span class="header-span"><a class="nav-link" href="#Price">Price</a></span>
             </nav>
         </header>
 
@@ -29,12 +29,12 @@
             <section id="Home">
                 <!-- <p class="top">p</p> -->
                 <h1>Welcome to MindSolver</h1>
-                <h2>ultimate tool for mastering problem-solving skills. Whether you're a student, professional, or lifelong learner, MindSolver is designed to help you tackle challenges with confidence and improve your critical thinking abilities.</h2>
+                <h4>ultimate tool for mastering problem-solving skills</h4>
             </section>
 
             <section id="form-page">
                 <form action="https://www.freecodecamp.com/email-submit" id="form">
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
                     <input type="submit" value="Get Started" id="submit">
                 </form>
             </section>
@@ -42,7 +42,7 @@
             <section id="Benefit">
                 <!-- <p class="top">p</p> -->
                 <div class="grid">
-                    <div class="icon"><i class="fas fa-brain fa-3x"></i></div>
+                    <div class="icon-grid"><i class="fas fa-brain fa-3x"></i></div>
                     <div class="desciption">
                         <h2>Enhanced Problem-Solving Abilities</h2>
                         <p>Develop and refine your problem-solving skills with our comprehensive and interactive learning modules</p>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="grid">
-                    <div class="icon"><i class="fas fa-globe fa-3x"></i></div>
+                    <div class="icon-grid"><i class="fas fa-globe fa-3x"></i></div>
                     <div class="desciption">
                         <h2>Real-World Applications</h2>
                         <p>Our content is designed to mimic real-world scenarios, allowing you to apply your skills in practical situations</p>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="grid">
-                    <div class="icon"><i class="fas fa-laptop fa-3x"></i></div>
+                    <div class="icon-grid"><i class="fas fa-laptop fa-3x"></i></div>
                     <div class="desciption">
                         <h2>Flexible Learning Options</h2>
                         <p>Learn at your own pace and convenience</p>
@@ -71,36 +71,64 @@
 
             <section id="Price">
                 <!-- <p class="top">p</p> -->
-                <div class="product" id="Basic">
-                    <div class="level">Basic</div>
-                    <h2>$9.99/month</h2>
-            
-                    <i class="fas fa-book"></i>Access to basic tutorials<br>
-                    <i class="fas fa-tasks"></i>Limited interactive exercises<br>
-                    <i class="fas fa-users"></i>Community support<br>
-                    <button class="btn">Select</button>
+                <div class="product">
+                    <div class="level" id="Bronze">
+                        <h3>Bronze</h3>
+                        <h2>$9.99</h2>
+                        <p>Monthly package</p>
+                    </div>
+                    <div class="feature-wrap">
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-book fa-1x"></i></div><p>Access to basic tutorials</p></div>
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-tasks fa-1x"></i></div><p>Limited interactive exercises</p></div>
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-users fa-1x"></i></div><p>Community support</p></div>
+                    </div>
+                    <button class="btn">SUBCRIBE NOW</button>
                 </div>
 
-                <div class="product" id="Pro">
-                    <div class="level">Pro</div>
-                    <h2>$19.99/month</h2>
-            
-                    <i class="fas fa-book"></i>Access to all tutorials<br>
-                    <i class="fas fa-tasks"></i>Unlimited interactive exercises<br>
-                    <i class="fas fa-users"></i>Community support with expert guidance<br>
-                    <button class="btn">Select</button>
+                <div class="product">
+                    <div class="level" id="Silver">
+                        <h3>Silver</h3>
+                        <h2>$19.99</h2>
+                        <p>Monthly package</p>
+                    </div>
+                    <div class="feature-wrap">
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-book fa-1x"></i></div><p>Access to all tutorials</p></div>
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-tasks fa-1x"></i></div><p>Unlimited interactive exercises</p></div>
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-users fa-1x"></i></div><p>Community support with expert guidance</p></div>
+                    </div>
+                    <button class="btn">SUBCRIBE NOW</button>
                 </div>
 
-                <div class="product" id="Premium">
-                    <div class="level">Premium</div>
-                    <h2>$29.99/month</h2>
-            
-                    <i class="fas fa-book-reader"></i>Access to all tutorials and premium content<br>
-                    <i class="fas fa-tasks"></i>Unlimited interactive exercises<br>
-                    <i class="fas fa-users-cog"></i>Community support with expert guidance and exclusive forums<br>
-                    <button class="btn">Select</button>
+                <div class="product">
+                    <div class="level" id="Gold">
+                        <h3>Gold</h3>
+                        <h2>$29.99</h2>
+                        <p>Monthly package</p>
+                    </div>
+                    <div class="feature-wrap">
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-book fa-1x"></i></div><p>Access to all tutorials and premium content</p></div>
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-tasks fa-1x"></i></div><p>Unlimited interactive exercise</p></div>
+                        <div class="feature"><div class="icon-feature"><i class="fas fa-users-cog fa-1x"></i></div><p>Community support with expert guidance and exclusive forums</p></div>
+                    </div>
+                    <button class="btn">SUBCRIBE NOW</button>
                 </div>
             </section>
+        </div>
+        <div class="footer">
+            <div id="footer-logo">
+                <img src="https://freesvg.org/img/1397119481.png" alt="MindSolver" id="footer-img">    
+                <h3>MindSolver</h3>
+            </div>
+            <div id="footer-link-wrap">
+                <span class="footer-span"><a class="footer-link" href="#Home">Home</a></span>
+                <span class="footer-span"><a class="footer-link" href="#Benefit">Benefit</a></span>
+                <span class="footer-span"><a class="footer-link" href="#Price">Price</a></span>
+            </div>
+            <div class="media-sosial">
+                <div class="icon-media-sosial"><a href="#" class="media-sosial-link"><i class="fab fa-facebook" ></i></a></div>
+                <div class="icon-media-sosial"><a href="#" class="media-sosial-link"><i class="fab fa-linkedin" ></i></a></div>
+                <div class="icon-media-sosial"><a href="#" class="media-sosial-link"><i class="fab fa-instagram" ></i></a></div>
+            </div>
         </div>
     </div>
 </body>
